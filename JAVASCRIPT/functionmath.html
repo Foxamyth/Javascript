@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Matimatika Di Function</title>
+</head>
+
+<body>
+    <script>
+        
+        function luaspp(){
+            var p= document.getElementById("nilai_p");
+            var l= document.getElementById("nilai_l");
+            var hasil= document.getElementById("hasil");
+            var hasil1= p.value * l.value;
+            hasil.value= hasil1;
+
+            var rumus = p.value * l.value;
+            document.getElementById("hasil2").
+            innerHTML=rumus
+        }
+    </script>
+    <h1>PROGRAM SEDERHANA MENGHITUNG LUAS PERSEGI PANJANG</h1>
+    <hr>
+    Nilai P <input type="text" id="nilai_p">
+    <br><br>
+    Nilai L <input type="text" id="nilai_l">
+    <br><br>
+    Luas <input type="text" id="hasil">
+    <br><br>
+    <div id="hasil2"></div>
+    <br><br>
+    <button onclick="luaspp()">Hasil</button>
+</body>
+</html>

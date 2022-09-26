@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Event Mouse</title>
+    </head>
+
+
+    <body>
+        
+<button id="btn-enter">Mouse Enter</button>
+<button id="btn-over">Mouse Hover</button>
+<button id="btn-out">Mouse Out</button>
+
+<script>
+
+
+    var btnenter = document.getElementById ('btn-enter')
+    var btnover = document.getElementById ('btn-over')
+    var btnout = document.getElementById ('btn-out')
+
+    btnenter.addEventListener('mouseenter',function(){
+        btnenter.innerText = "KOMINFO";
+    })
+    btnover.addEventListener('mouseover',function(){
+        btnover.innerText = "ANAK";
+    })
+    btnout.addEventListener('mouseout',function(){
+        btnout.innerText = "KONTOL!";
+    })
+</script>
+    </body>
+
+</html>
